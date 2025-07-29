@@ -1,0 +1,152 @@
+* {
+    margin: auto 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: rgb(0, 0, 43);
+display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 1250px;
+    margin-top: 80px;
+    box-shadow: 0 0 10px aqua;
+    flex-direction: column;
+    border-radius: 10px;
+
+
+}
+
+.card {
+margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 {
+
+    height: 400px;
+    width: 300px;
+    /* background-color: burlywood; */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px aqua;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    transition: 0.4s linear;
+    flex-direction: column;
+    
+
+}
+
+.card1:hover {
+    box-shadow: 0 0 20px burlywood;
+    scale: 1.06;
+}
+
+
+
+h1 {
+    height: 40px;
+    width: 50px;
+    /* background-color: aqua; */
+    color: aqua;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+    box-shadow: 0 0 10px aqua;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+h1:hover{
+    box-shadow: 0 0 20px aqua;
+    scale: 1.1;
+
+}
+
+img {
+    height: 380px;
+    width: 273px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.dot {
+    color: aqua;
+    font-size: 50px;
+  text-shadow: 0 0 10px aqua;
+  cursor: pointer;
+  
+  height: 80px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.slider-window {
+  width: 985px; 
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+/* for tablet */
+
+@media (max-width: 768px) {
+    .prev, .next {
+        font-size: 1.5rem;
+        padding: 0 10px;
+       
+    }
+
+  
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+        
+    }
+
+    .card{
+        flex-direction: column;
+    
+    }
+
+    .prev, .next {
+        font-size: 1.2rem;
+        padding-top: 10px;
+    }
+
+    .card1 img {
+        border-radius: 8px;
+       
+    }
+
+
+}
